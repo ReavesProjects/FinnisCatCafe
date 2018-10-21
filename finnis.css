@@ -19,13 +19,50 @@
 	padding: 0;
 }
 
-
-.banner
+.banner1
 {
 	background-image: url("cafe-chairs-menu-6267.jpg");
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
+}
+
+
+.banner2
+{
+  background-image: url("architecture-cafe-chair-1055054.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
 }
 
 .main-nav a
@@ -97,7 +134,8 @@
 
 .logo img 
 {
-	width: 150px;
+	img src: url("Finni's logo v1.jpg");
+  width: 150px;
 	height: auto;
 	float: left;
 	margin-left: 20px;
@@ -109,13 +147,17 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: Roboto, sans-serif;
 }
 
-.box
+.box1
 {
-	width: 300px;
+	width: 250px;
 	height: 200px;
 	float: left;
 	margin: 10px;
-	border-radius: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  vertical-align: middle;
 }
 .row 
 {
@@ -140,21 +182,28 @@ h1
 	margin-top: 275px;
 }
 
-.button
-{
-margin-top: 30px;
-margin-left: 440px;
-}
 
-.btn 
+.button 
 {
-	border: 1px solid white;
+	background-color: red;
+  border: 1px solid red;
 	padding: 10px 30px;
 	color: white;
 	text-decoration: none;
-	margin-right: 5px;
-	font-size: 13px;
+  height: 20px; 
+  width: 100px; 
+  margin: -20px -50px; 
+  position:relative;
+  top: 50%; 
+  left: 50%;
+	font-size: 14px;
+  font-family: Roboto, sans-serif;
 	text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: white;
+    color: red;
 }
 
 html, body {
@@ -166,9 +215,9 @@ height: 100%;
 
 div.gallery {
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   float: left;
-  width: 180px;
+  width: 300px;
 }
 
 div.gallery:hover {
@@ -183,6 +232,8 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
 }
 
 #wrapper {
@@ -202,19 +253,26 @@ height: 50px; /* the footer's total height */
 height: 100%;
 }
 
-footer { 
-    display: block;
-    position: absolute;
+.footer { 
+    position: float;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    color: white;
+    text-align: center;
     clear: both;
 }
 
-#footer {
+.footer {
    	height: 50px;  /* the footer's total height */
 }
 
-#footer-content {
+.footer-content {
 background-color: #f3e5f5;
-border: 1px solid #ab47bc;
+border: 10px solid #ab47bc;
 height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
 padding: 8px;
 }
@@ -251,7 +309,10 @@ padding: 8px;
 
 .column {
     float: left;
-    width: 50%;
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-bottom: 30px;
 }
 
 /* Clear floats after the columns */
@@ -261,7 +322,25 @@ padding: 8px;
     clear: both;
 }
 
+/* unvisited link */
+a:link {
+    color: black;
+}
 
+/* visited link */
+a:visited {
+    color: gray;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 /*@media screen and (max-width: 600px) {
