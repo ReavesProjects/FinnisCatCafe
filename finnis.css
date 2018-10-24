@@ -112,7 +112,7 @@ body, html {
 }*/
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
 
   .main-nav a:not(:first-child) {display: none;}
   .main-nav a.icon {
@@ -321,6 +321,20 @@ padding: 8px;
     clear: both;
 }
 
+.instafeed {
+    float: left;
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+
+/* Clear floats after the columns */
+.instafeed:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* unvisited link */
 a:link {
     color: black;
