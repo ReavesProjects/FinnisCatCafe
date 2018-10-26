@@ -254,26 +254,26 @@ height: 100%;
 
 .footer { 
     position: float;
-    left: 0;
+    left: 0px;
     bottom: 0;
     width: 100%;
     background-color: red;
-    font-size: 14px;
+    font-size: 15px;
     font-family: Roboto, sans-serif;
-    color: white;
+    color: black;
     text-align: center;
     clear: both;
 }
 
 .footer {
-   	height: 50px;  /* the footer's total height */
+   	height: 80px;  /* the footer's total height */
 }
 
 .footer-content {
 background-color: #f3e5f5;
-border: 10px solid #ab47bc;
-height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
-padding: 8px;
+border: 20px solid #ab47bc;
+height: 60px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+padding: 10px;
 }
 
 /* Style all font awesome icons */
