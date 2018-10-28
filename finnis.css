@@ -36,6 +36,22 @@
   background-position: center;
 }
 
+.banner3
+{
+  background-image: url("beverage-book-break-531639.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner4
+{
+  background-image: url("cat cafe wall.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
 body, html {
     height: 100%;
 }
@@ -68,8 +84,9 @@ body, html {
 .main-nav a
 {
 	float: right;
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-bottom: 10px;
+  margin-left: 20px;
 	background-color: transparent;
 }
 
@@ -95,7 +112,15 @@ body, html {
 .main-nav a:hover
 {
 	border: 1px solid gray;
+  color: black;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .main-nav .icon {
@@ -114,7 +139,7 @@ body, html {
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media all and (max-width: 600px) {
 
-  .main-nav a:not(:first-child) {display: none;}
+  .main-nav a{display: none;}
   .main-nav a.icon {
     float: right;
     display: block;
@@ -141,6 +166,10 @@ body, html {
 	margin-left: 20px;
 	margin-top: 20px;
 	margin-bottom: 10px;
+}
+
+h1 {
+    letter-spacing: .3em;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -192,7 +221,7 @@ h1
   height: 20px; 
   width: 100px; 
   margin: -20px -50px; 
-  position:relative;
+  position: relative;
   top: 50%; 
   left: 50%;
 	font-size: 14px;
@@ -200,9 +229,17 @@ h1
 	text-transform: uppercase;
 }
 
-.button:hover {
+.button:hover 
+{
     background-color: white;
     color: red;
+    text-decoration: none;
+}
+
+.a:hover{
+    background-color: white;
+    color: red;
+    text-decoration: none;
 }
 
 html, body {
@@ -235,46 +272,26 @@ div.desc {
   font-family: Roboto, sans-serif;
 }
 
-#wrapper {
-background-color: #e3f2fd;
-min-height: 100%;
-height: auto !important;
-margin-bottom: -50px; /* the bottom margin is the negative value of the footer's total height */
+#footer {
+  background-color: lightgray;
+  width: 100%;
+  padding: 20px;
 }
 
-#wrapper:after {
-content: "";
-display: block;
-height: 50px; /* the footer's total height */
-}
+#footer > p:first-child {
+    float: left;
+    text-align: left;
+    width: 33.3%; }
 
-#content {
-height: 100%;
-}
-
-.footer { 
-    position: float;
-    left: 0px;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    font-size: 15px;
-    font-family: Roboto, sans-serif;
-    color: black;
+#footer > p:nth-child(2) {
+    float: left;
     text-align: center;
-    clear: both;
-}
+    width: 33.4%; }
 
-.footer {
-   	height: 80px;  /* the footer's total height */
-}
-
-.footer-content {
-background-color: #f3e5f5;
-border: 20px solid #ab47bc;
-height: 60px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
-padding: 10px;
-}
+#footer > p:last-child {
+    float: right;
+    text-align: right;
+    width: 33.3%; }
 
 /* Style all font awesome icons */
 .fa {
@@ -304,6 +321,20 @@ padding: 10px;
 .fa-twitter {
     background: #55ACEE;
     color: white;
+}
+
+.column1 {
+    float: left;
+    width: 33.33%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .column {
@@ -338,16 +369,18 @@ padding: 10px;
 /* unvisited link */
 a:link {
     color: black;
+    text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: gray;
+    color: black;
 }
 
 /* mouse over link */
 a:hover {
-    color: white;
+    color: black;
+    text-decoration: none;
 }
 
 /* selected link */
