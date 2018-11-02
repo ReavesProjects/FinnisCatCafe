@@ -21,7 +21,7 @@
 
 .banner1
 {
-	background-image: url("cafe-chairs-menu-6267.jpg");
+	background-image: url("img/cafe-chairs-menu-6267.jpg");
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -29,7 +29,7 @@
 
 .banner2
 {
-  background-image: url("architecture-cafe-chair-1055054.jpg");
+  background-image: url("img/architecture-cafe-chair-1055054.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -37,7 +37,7 @@
 
 .banner3
 {
-  background-image: url("beverage-book-break-531639.jpg");
+  background-image: url("img/beverage-book-break-531639.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -45,7 +45,7 @@
 
 .banner4
 {
-  background-image: url("cats-looking-out-window.jpg");
+  background-image: url("img/cats-looking-out-window.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -53,7 +53,7 @@
 
 .banner5
 {
-  background-image: url("cat cafe interior1.jpg");
+  background-image: url("img/cat-cafe-interior1.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -118,7 +118,7 @@ ul {
 /* Hide the link that should open and close the topnav on small screens */
 .main-nav .icon {
     display: none;
-}
+  }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 /*@media screen and (max-width: 600px) {
@@ -152,7 +152,7 @@ ul {
 
 .logo img 
 {
-	img src: url("Finni's logo v1.jpg");
+	img src: url("img/finnis-logo.jpg");
   width: 150px;
 	height: auto;
 	float: left;
@@ -401,7 +401,7 @@ a:active {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-/*@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column {
         width: 100%;
     }
