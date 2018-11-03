@@ -11,22 +11,31 @@
 <body>
 	 <header>
 
-		<div class="row">
-			<div class="logo">
-				<a href="index.html">
-				<img src="img/finnis-logo.png" alt="Finni's Cat Cafe & Human Meeting Place"></a>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="logo" href="index.html"; img src="img/finnis-logo.png" alt="Finni's Cat Cafe & Human Meeting Place"></a>
     </div>
-
-
-		<div class="main-nav" id="myMainnav">
-			<a href="contact.html">CONTACT</a>
-			<a href="finnis-menu.html" class="active">MENU</a>
-			<a href="adoptable-cats.html">ADOPT</a>
-      <a href="about-us.html">ABOUT</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    		<i class="fa fa-bars"></i>
-		</a>
-	</div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="about-us.html">About</a></li>
+        <li><a href="adoptable-cats.html">Adoptable Cats</a></li> 
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact-us.html">Contact</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 	</header>
 
 <div class="banner3">
@@ -42,7 +51,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="column">
+		<div class="col-sm-4">
  	<h5>NIBBLES & NOSHES</h5>
  <ul>	
  	<h6>SANDWICHES</h6>
@@ -63,9 +72,10 @@
  	<br>
 	<br>
 	</div>
+</div>
 
  <div class="row">
- 		<div class="column">
+ 		<div class="col-sm-4">
  	<h5>BEVERAGES</h5>
  	<p>
  <ul>
@@ -91,7 +101,11 @@
  	<br>
 		</p>
 		   </div>
-
+     </div>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 </div>
