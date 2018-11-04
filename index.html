@@ -27,13 +27,15 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+      	<li class="active"><a href="index.html">Home</a></li>
         <li><a href="adoptable-cats.html">Adoptable Cats</a></li> 
         <li><a href="about-us.html">About</a></li>
         <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
         <li><a href="contact.html">Contact</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="adoption-form.html"><span class="glyphicon glyphicon-user"></span> Adopt</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Donate</a></li>
       </ul>
     </div>
@@ -43,13 +45,14 @@
 <div class="banner1">
   <div class="hero-text">
     <h1><strong>Welcome to Finni's</h1>
-    <h3>UWS's FIRST CAT CAFE & ADOPTION CENTER</strong></h3>
+    <h2>UWS's FIRST CAT CAFE & ADOPTION CENTER</strong></h2>
     <br>
     <div class="button">
     <a href="about-us.html"><strong>LEARN MORE</strong></a>
 </div>
 </div>
 </div>
+<br>
 <br>
 <div class="container1">
 <div class="row">
@@ -82,7 +85,7 @@
 <br>
 <br>
 	<div class="button">
-    <a href="calendar.html"><strong>VIEW ALL</strong></a>
+    <a href="events.html"><strong>VIEW ALL</strong></a>
     </div>
 <br>
 <br>
@@ -120,7 +123,7 @@
     <h4><strong>GET HERE</h4>
   <h5>505 Columbus Avenue<br />
   New York, NY 10024<br />
-  <strong>Tel:</strong>212.555.3201</br />
+  <strong>Tel:</strong> 212.555.3201</br />
   <strong>Email:</strong> <a href="mailto:sharon@reavesgallery.com" target="_top">info@finniscatcafe.com</a></br /></h5></p><br>
 </div>
 
@@ -142,6 +145,23 @@
     <a href="https://www.youtube.com/watch?v=wH63Pw9CSyk" target="_blank">Youtube</a></br /></h5></p>
     </div>
 </div>
+</div>
+
+<div id="list-builder"></div>
+<div id="popup-box">
+    <img src="close.png" id="popup-close" />
+    <div id="popup-box-content">
+        <h1>Subscribe To Our Newsletter</h1>
+        <p>
+            Learn about specials, events and stay up to date on our cats and recent adoptions.
+        </p>
+        <form id="popup-form" action="https://email_list_service_api.com">
+            <input type="hidden" name="list" value="key_list_etc" />
+            <input type="text" name="name" placeholder="Full Name" />
+            <input type="text" name="email" placeholder="Email Address" />
+            <button type="button" name="subscribe">Subscribe</button>
+        </form>
+    </div>
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
